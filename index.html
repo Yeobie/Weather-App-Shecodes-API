@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilaria's Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h3>Weather in...</h3>
+        </div>
+        <div class="col-4 form">
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="Search city..."
+              class="form-control"
+              id="search-city-input"
+              autocomplete="off"
+            />
+          </form>
+        </div>
+        <div class="col search">
+          <button type="button" class="btn btn-primary" id="search-button">
+            Search
+          </button>
+        </div>
+      </div>
+      <br />
+      <h1 id="city-name"></h1>
+      <p class="date">
+        <strong id="current-date"></strong>
+        <br />
+      </p>
+
+      <div class="description">
+        <p class="weatherdata" id="weather-description"></p>
+        <p class="weatherdata" id="wind"></p>
+        <p class="weatherdata" id="humidity"></p>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <!--empty column, just to put some space on the left-->
+        <div class="col temperature" id="degrees-value"></div>
+        <div class="col celsiusfahrenheit">
+          <a href="#" id="celsius-degrees" class="active"></a>
+          <a href="#" id="fahrenheit-degrees"></a>
+        </div>
+        <div class="col icon"><img src="" id="icon" alt="" /></div>
+      </div>
+      <h4><strong></strong></h4>
+      <br />
+
+      <div id="forecast"></div>
+
+      <br />
+      <br />
+    </div>
+    <div class="credits">
+      <small class="credits">
+        Project by
+        <a href="https://github.com/Yeobie/Ilaria-s-Project" target="blank"
+          >Ilaria Vilardi</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/sites/determined-shaw-d6f382/overview"
+          target="_blank"
+          >hosted on Netlify.</a
+        ></small
+      >
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

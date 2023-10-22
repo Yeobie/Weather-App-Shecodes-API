@@ -1,0 +1,139 @@
+.container {
+  max-width: 800px;
+  max-height: 600px;
+  display: block;
+  background-color: #f9e0c7;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 50px #f9e0c7;
+}
+
+h3 {
+  color: #3a6c77;
+  padding-left: 20px;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.btn-primary {
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #4c8492;
+}
+
+.btn-primary:hover {
+  background-color: #215d6b;
+}
+
+/* .btn-success {
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #f09c67;
+} 
+
+.btn-success:hover {
+  background-color: #c66a31;
+} */
+
+h1 {
+  color: #013c4d;
+  margin: 0 auto;
+  background-color: #fbf7e6;
+  border-radius: 30px;
+  width: fit-content;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  padding: 0px 20px;
+}
+
+h1,
+.date,
+.weatherdata {
+  display: block;
+  text-align: center;
+}
+
+h1,
+.date,
+.weatherdata::first-letter {
+  text-transform: capitalize;
+}
+
+.description {
+  background-color: rgba(241, 156, 103, 0.3);
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  padding: 0px 10px;
+}
+
+.weatherdata {
+  margin: 0px;
+}
+
+.temperature {
+  font-size: 100px;
+  color: #4c8492;
+  padding-right: 0px;
+  max-width: 150px;
+  text-align: right;
+}
+
+.celsiusfahrenheit {
+  padding: 30px 0px;
+  font-size: 30px;
+}
+
+.active {
+  cursor: default;
+  color: #4c8492;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+#icon {
+  width: 150px;
+}
+
+h4 {
+  color: #3a6c77;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f09c67;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.forecast-squares {
+  background-color: rgba(76, 132, 146, 0.5);
+  border-radius: 20px;
+  max-width: 150px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.forecast-temperatures {
+  font-size: 16px;
+}
+
+.forecast-temp-min {
+  color: #3a6874;
+}
+
+.credits {
+  text-align: center;
+}
